@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exiera medical training college</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/shared.css" />
+    <link rel="stylesheet" href="/admission.css" />
+    <script
+      src="https://kit.fontawesome.com/6f82847460.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="admission.js" defer></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <div id="college">
+        <img src="/images/college.jpeg" alt="college logo" />
+        <h1><a href="#">exiera medical training college</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">admission</a></li>
+          <li><a href="">academics</a></li>
+          <li><a href="">programs</a></li>
+          <li><a href="">branches</a></li>
+          <li><a href="">contact us</a></li>
+        </ul>
+      </nav>
+      <a href="#side-drawer" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+
+    <aside id="side-drawer">
+      <header>
+        <a href="#" class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="">admission</a></li>
+          <li><a href="">academics</a></li>
+          <li><a href="">programs</a></li>
+          <li><a href="">branches</a></li>
+          <li><a href="">contact us</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <p>Fill in the form to get started with emtc:</p>
+      <form action="" method="post">
+        <div id="personal-details-form">
+          <h1>Personal Information</h1>
+          <div id="personal">
+            <div class="personal-details">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" />
+            </div>
+
+            <div class="personal-details">
+              <label for="middle-name">Middle Name(optional)</label>
+              <input type="text" name="middle-name" id="middle-name" />
+            </div>
+
+            <div class="personal-details">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+
+            <div class="personal-details">
+              <label for="id/birth">ID/Birth Cert No.</label>
+              <input type="number" name="id/birth" id="id/birth" />
+            </div>
+
+            <div class="personal-details">
+              <label for="gender">Gender</label>
+              <input type="text" name="gender" id="gender" />
+            </div>
+
+            <div class="personal-details">
+              <label for="date-birth">Date of Birth</label>
+              <input type="date" name="date-birth" id="date-birth" />
+            </div>
+
+            <div class="personal-details">
+              <label for="county">County</label>
+              <input type="text" name="county" id="county" />
+            </div>
+
+            <div class="personal-details">
+              <label for="year-examination">Year of Examination</label>
+              <input
+                type="text"
+                name="year-examination"
+                id="year-examination"
+              />
+            </div>
+
+            <div class="personal-details">
+              <label for="index-number">Index Number</label>
+              <input type="number" name="index-number" id="index-number" />
+            </div>
+
+            <div class="personal-details">
+              <label 
+                >Do you consider yourself Disabled person?</label
+              >
+              <div>
+                <input type="radio" id="yes" name="disabled-person" value="yes">
+                <label for="yes">Yes</label>
+              </div>
+              <div>
+                <input type="radio" id="no" name="disabled-person" value="no">
+                <label for="no">No</label>
+              </div>
+            </div>
+
+            <div class="personal-details">
+              <label for="attachments"
+                >add attachments( e.g certificates)</label
+              >
+              <input type="file" name="attachments" id="attachments" />
+            </div>
+
+            <button id="btn-next">next</button>
+          </div>
+        </div>
+
+        <div id="contact-details-form">
+          <h1>Contact</h1>
+          <div id="contact">
+            <div class="contact-details">
+              <label for="postal-address">Postal address</label>
+              <input type="number" name="postal-address" id="postal-address" />
+            </div>
+
+            <div class="contact-details">
+              <label for="postal-code">Postal code</label>
+              <input type="number" name="postal-code" id="postal-code" />
+            </div>
+
+            <div class="contact-details">
+              <label for="town">Town</label>
+              <input type="text" name="town" id="town" />
+            </div>
+
+            <div class="contact-details">
+              <label for="phone-number"
+                >Applicant's Phone(e.g 0707168253)</label
+              >
+              <input type="number" name="phone-number" id="phone-number" />
+            </div>
+
+            <div class="contact-details">
+              <label for="phone-number"
+                >Alternative Phone(e.g 0707168253)</label
+              >
+              <input type="number" name="phone-number" id="phone-number" />
+            </div>
+            <div id="contact button">
+              <button type="button" class="btn" id="btn-previous">previous</button>
+              <button type="submit" class="btn" id="btn-submit">submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div id="footer-details">
+        <div id="news">
+          <h2>news</h2>
+          <ul>
+            <li>september intake in progress</li>
+            <li>
+              we shall offer visa support to;<br />
+              UK, USA,Qatar & Germany
+            </li>
+          </ul>
+        </div>
+        <div id="media">
+          <h2>get in touch</h2>
+          <div id="media-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-square-facebook fa-2x"></i
+                ></a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-square-whatsapp fa-2x"></i
+                ></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-tiktok fa-2x"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-square-phone fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        &copy;2024 developed by <a href="">kevin gunga</a>. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

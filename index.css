@@ -1,0 +1,203 @@
+body {
+  background-color: #0093dd;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 4rem;
+}
+
+#health-catch-image {
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-around; */
+  background-color: #cdcdc9;
+  cursor: pointer;
+}
+
+#health-catch-image img {
+  padding: 30px 20px;
+  width: 60rem;
+  border: none;
+}
+
+#model {
+  margin: auto ;
+  font-weight: 600;
+  color: rgb(14, 14, 4);
+  padding: 0 10px 0 0;
+  font-size: 30px;
+  width: 37.5rem;
+}
+
+#models {
+  /* color: #e3f8fb; */
+  color: #fffdff;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  width: 11.25rem;
+  /* text-transform: uppercase; */
+  /* text-align: center; */
+  font-size: 1.25rem;
+  /* font-family: serif; */
+  /* padding: 5px 0; */
+  padding: 0;
+  margin: 0 auto 0 auto;
+  /* border-radius: 5px; */
+}
+
+/* h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, rgb(212, 200, 32) 50%, #ffff 50%);
+} */
+
+#about {}
+
+#about p {
+  width: 60%;
+  margin: 0 auto;
+  color: #fffdff;
+}
+
+#programs {
+    /* height: 22.125rem; */
+    margin: 20px auto;
+    /* padding: 1.25rem; */
+   
+  }
+  
+  #programs table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 0 auto 2rem auto;
+  }
+  
+  #programs table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    /* background-color: #fffdff; */
+    cursor: pointer;
+  }
+  
+  #programs table th {
+    background-color: #c03027;
+    color: #fffdff;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  #programs table td {
+    /* font-weight: bold; */
+    background-color: #fffdff;
+    font-size: 0.8rem;
+  }
+  
+  #programs table td:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+#branches {
+    margin: 1rem 0 3rem 0;
+}
+
+#branches ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    /* width: 400px; */
+}
+
+#branches ul li {
+    padding: 0 1.25rem;
+    list-style: square;
+    text-transform: uppercase;
+    color: #fffdff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 48rem) {
+  main {
+    margin-top: 3.8rem;
+  }
+
+  #health-catch-image img {
+    padding: 20px 10px;
+    width: 28rem;
+  }
+
+  #model {
+    padding: 0 8px 0 0;
+    font-size: 0.9rem;
+    width: 30rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  #about p {
+    width: 80%;
+  }
+
+  #programs table {
+    width: 80%;
+  }
+
+  #programs table th,
+  table td {
+    padding: 6px;
+  }
+
+  #branches ul li {
+    font-size: 0.85rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  main {
+    margin-top: 3.7rem;
+  }
+
+  #health-catch-image {
+    display: block;
+    /* justify-content: center;
+    cursor: pointer; */
+  }
+
+  #health-catch-image img {
+    padding: 20px 4px;
+    width: 28rem;
+  }
+
+  #model {
+    padding: 0 0 10px 0;
+    font-size: 0.9rem;
+    width: 20rem;
+    margin:  0 auto;
+    text-align: center;
+  }
+
+  #branches ul li {
+    font-size: 0.7rem;
+    padding: 0 0.8rem;
+  }
+}
+
+
+

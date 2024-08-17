@@ -1,0 +1,92 @@
+main {
+  padding: 20px;
+}
+
+main p {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+#personal-details-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto 50px auto;
+  /* display: none; */
+}
+
+#personal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.personal-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 15.6rem;
+  height: 3.2rem;
+  margin: 0 auto;
+}
+
+#btn-next {
+  width: 5rem;
+  height: 3.2rem;
+  text-transform: uppercase;
+  padding: 6px;
+  background-color: #fffdff;
+  border: none;
+}
+
+#btn-next:hover {
+  cursor: pointer;
+}
+
+#contact-details-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto 50px auto;
+  display: none;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 15.6rem;
+  height: 3.25rem;
+  margin: 0 auto;
+}
+
+#contact button {
+    /* padding: 10px; */
+    margin: 0 10px;
+}
+
+.btn {
+  width: 5rem;
+  height: 2.5rem;
+  text-transform: uppercase;
+  padding: 6px;
+  background-color: #fffdff;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}

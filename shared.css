@@ -1,0 +1,263 @@
+#main-header {
+  background-color: #c03027;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  /* height: 96px; */
+  position: fixed;
+  width: 95%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#college {
+  display: flex;
+}
+
+#college img {
+  width: 4.7rem;
+  height: 4.3rem;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#college h1 {
+  text-transform: uppercase;
+  padding: 0 6px;
+  font-size: 1.8rem;
+}
+
+#college h1 a {
+  text-decoration: none;
+  color: #fffdff;
+}
+
+#main-header nav {
+  /* padding: 6px ; */
+  margin: auto;
+  padding: 0;
+}
+
+#main-header nav ul {
+  list-style: none;
+  display: flex;
+  margin: auto;
+  padding: 0;
+}
+
+#main-header nav ul li {
+  /* margin: auto; */
+  padding: 6px 10px;
+  border-left: 1px solid #e3f8fb;
+}
+
+#main-header ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e3f8fb;
+  font-weight: 400;
+}
+
+#main-header nav ul li a:hover {
+  cursor: pointer;
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: #0093dd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4rem;
+  padding: 0 1%;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: rgb(240, 240, 240);
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+footer {
+  background-color: #c03027;
+  /* height: 200px; */
+}
+
+#footer-details {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 50px auto;
+  width: 12.5rem;
+}
+
+#news {
+  padding: 0 1rem;
+}
+
+#news ul {
+  padding: 0;
+  margin: 0;
+  width: 16.25rem;
+}
+
+#news ul li {
+  list-style: square;
+  text-transform: capitalize;
+  color: #fffdff;
+  font-size: 1rem;
+}
+
+#media {
+  display: flex;
+  flex-direction: column;
+  /* width: 130px; */
+  /* margin: 0 0 50px 0; */
+  margin: 0;
+  padding: 0 1rem;
+}
+
+#media-list ul {
+  width: 16.25rem;
+  margin: 10px auto;
+  display: flex;
+}
+
+#media-list ul li {
+  list-style: none;
+}
+
+#media-list ul li a {
+  padding: 0 10px;
+}
+
+footer p {
+  margin: 0;
+  padding: 0 0 10px 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+footer p a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 48rem) {
+  #main-header {
+    padding: 0 3%;
+    width: 94%;
+  }
+
+  #main-header nav {
+    display: none;
+  }
+
+  #college img {
+    width: 3.7rem;
+    height: 3.5rem;
+    /* margin: auto; */
+    /* border-radius: 5px; */
+  }
+
+  #college h1 {
+    font-size: 1.5rem;
+    /* margin: 0; */
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  #news ul li {
+    font-size: 0.85rem;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  #main-header {
+    padding: 1% 3%;
+    /* width: 94%; */
+  }
+
+  .menu-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  #college img {
+    width: 3.5rem;
+    height: 3.2rem;
+    /* margin: auto; */
+    /* border-radius: 5px; */
+  }
+
+  #college h1 {
+    font-size: 1rem;
+  }
+
+  #footer-details {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin: 0 auto 50px auto; */
+    width: 9.5rem;
+  }
+
+  #news ul {
+    width: 10.25rem;
+  }
+
+  #media-list ul {
+    width: 10.25rem;
+    margin: 10px auto;
+    padding: 0;
+  }
+}
