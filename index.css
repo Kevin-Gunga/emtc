@@ -46,44 +46,9 @@ h2 {
 
 #about p {
   width: 60%;
-  margin: 0 auto;
+  margin: 6px auto;
   color: #fffdff;
   font-size: 1rem;
-}
-
-#impact {
-  /* width: 80%; */
-  margin: 0 auto;
-}
-
-#impact ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  /* margin: 0 auto; */
-  padding: 0;
-  list-style: none;
-}
-
-.impact-details {
-  /* list-style: none; */
-  padding: 10px 20px;
-  /* padding: 0 auto; */
-  /* margin: auto; */
-}
-
-.impact-details video {
-  width: 350px;
-  height: 300px;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.impact-details p {
-  margin: 0;
-  padding: 10px 20px;
-  font-size: 0.9rem;
-  color: #fffdff;
-  text-align: center;
 }
 
 #programs {
@@ -93,7 +58,7 @@ h2 {
 #programs table {
   width: 60%;
   border-collapse: collapse;
-  margin: 0 auto 2rem auto;
+  margin: 6px auto 2rem auto;
 }
 
 #programs table th,
@@ -120,6 +85,37 @@ table td {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+#impact {
+  margin: 0 auto;
+}
+
+#impact ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 0 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.impact-details {
+  padding: 0px 20px;
+}
+
+.impact-details video {
+  width: 350px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.impact-details p {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: #fffdff;
+  text-align: center;
+}
+
 #branches {
   margin: 1rem 0 3rem 0;
 }
@@ -140,71 +136,44 @@ table td {
   font-size: 1rem;
 }
 
-/* MEDIA QUERIES */
-/* @media (max-width: 64rem) {
-  #health-catch-image img {
-    padding: 30px 10px;
-    width: 20rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  #model {
-    padding: 0 0px 0 0;
-    font-size: 0.8rem;
-    width: 20rem;
-  }
-
-  #about p {
-    font-size: 0.7rem;
-  }
-
-  #branches ul li {
-    font-size: 0.8rem;
-    padding: 0 1rem;
-  }
-} */
-
 @media (max-width: 64rem) {
   #health-catch-image img {
     padding: 20px 15px;
-    width: 25rem; /* Increased width for better visibility on tablets */
+    width: 25rem; 
   }
 
   h2 {
-    font-size: 1.1rem; /* Slightly larger font size */
+    font-size: 1.1rem; 
   }
 
   #model {
     padding: 0 10px 0 0;
-    font-size: 0.9rem; /* Increased font size */
-    width: 25rem; /* Increased width */
+    font-size: 0.9rem; 
+    width: 25rem;
   }
 
   #about p {
-    font-size: 0.75rem; /* Adjusted font size */
-    width: 80%; /* Increased width for better readability */
+    font-size: 0.75rem; 
+    width: 80%; 
   }
 
   #programs table {
-    width: 75%; /* Adjusted table width for smaller screens */
+    width: 75%;
   }
 
   #programs table th,
   table td {
-    padding: 7px; /* Increased padding for better spacing */
+    padding: 7px; 
   }
 
   #branches ul {
-    flex-direction: row; /* Maintains row layout */
+    flex-direction: row; 
     justify-content: space-between;
   }
 
   #branches ul li {
-    font-size: 0.85rem; /* Slightly larger font size */
-    padding: 0 1.5rem; /* Adjusted padding */
+    font-size: 0.85rem; 
+    padding: 0 1.5rem; 
   }
 }
 
@@ -294,7 +263,25 @@ table td {
   #programs table td {
     font-size: 0.6rem;
   }
-
+  
+  #impact ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .impact-details {
+    padding: 10px 20px;
+  }
+  
+  .impact-details video {
+    width: 300px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
   .impact-details p {
     font-size: 0.8rem;
   }

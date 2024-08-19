@@ -17,16 +17,16 @@
     <header id="main-header">
       <div id="college">
         <img src="/images/college.jpeg" alt="college logo" />
-        <h1><a href="/index.html">exiera medical training college</a></h1>
+        <h1><a href="/index">exiera medical training college</a></h1>
       </div>
       <nav>
         <ul>
-          <li><a href="/admission.html">admission</a></li>
-          <li><a href="/academics.html">academics</a></li>
-          <li><a href="/index.html#programs">programs</a></li>
-          <li><a href="/index.html#impact">impact</a></li>
-          <li><a href="/index.html#branches">branches</a></li>
-          <li><a href="/#media">contact us</a></li>
+          <li><a href="/admission">admission</a></li>
+          <li><a href="/academics">academics</a></li>
+          <li><a href="/index/#programs">programs</a></li>
+          <li><a href="/index/#impact">impact</a></li>
+          <li><a href="/index/#branches">branches</a></li>
+          <li><a href="#media">contact us</a></li>
         </ul>
       </nav>
       <a href="#side-drawer" class="menu-btn">
@@ -39,26 +39,23 @@
     <aside id="side-drawer">
       <header>
         <a href="#" class="menu-btn">
-          <!-- <span></span>
-          <span></span>
-          <span></span> -->
-          <i class="fa-regular fa-x fa-2x" style="color: white;"></i>
+          <i class="fa-regular fa-x fa-2x" style="color: #ffff;"></i>
         </a>
       </header>
       <nav>
         <ul>
-          <li><a href="/admission.html">admission</a></li>
-          <li><a href="/academics.html">academics</a></li>
-          <li><a href="/index.html#programs">programs</a></li>
-          <li><a href="/index.html#impact">impact</a></li>
-          <li><a href="/index.html#branches">branches</a></li>
+          <li><a href="/admission">admission</a></li>
+          <li><a href="/academics">academics</a></li>
+          <li><a href="/index/#programs">programs</a></li>
+          <li><a href="/index/#impact">impact</a></li>
+          <li><a href="/index/#branches">branches</a></li>
           <li><a href="#media">contact us</a></li>
         </ul>
       </nav>
     </aside>
     <main>
       <p>Fill in the form to get started with emtc:</p>
-      <form action="" method="POST">
+      <form action="/admission" method="POST" id="form" enctype="multipart/form-data">
         <div id="personal-details-form">
           <h3>Personal Information</h3>
           <div id="personal">
@@ -89,7 +86,11 @@
 
             <div class="personal-details">
               <label for="gender">Gender</label>
-              <input type="text" name="gender" id="gender" required autocomplete="off"/>
+              <select name="gender" id="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+              </select>
+              <!-- <input type="text" name="gender" id="gender" required autocomplete="off"/> -->
             </div>
 
             <div class="personal-details">
@@ -105,7 +106,7 @@
             <div class="personal-details">
               <label for="year_examination">Year of Examination</label>
               <input
-                type="text"
+                type="date"
                 name="year_examination"
                 id="year_examination"
                 required 
@@ -134,7 +135,7 @@
 
             <div class="personal-details">
               <label for="attachments"
-                >add attachments( e.g K.C.S.E certificate)</label
+                >add attachments( birth certificate,passport,K.C.P.E certificate,K.C.S.E certificate/result slip in pdf format)</label
               >
               <input type="file" name="attachments" id="attachments" required autocomplete="off"/>
             </div>
@@ -145,6 +146,7 @@
 
         <div id="contact-details-form">
           <h3>Contact</h3>
+          <p id="auth-msg"></p>
           <div id="contact">
             <div class="contact-details">
               <label for="postal_address">Postal address</label>
@@ -212,9 +214,6 @@
               <li>
                 <a href=""><i class="fa-brands fa-tiktok fa-2x"></i></a>
               </li>
-              <!-- <li>
-                <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
-              </li> -->
               <li>
                 <a href="tel:+254790984771" target="_blank"><i class="fa-solid fa-square-phone fa-2x"></i></a>
               </li>

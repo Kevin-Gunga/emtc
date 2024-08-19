@@ -17,14 +17,6 @@ input {
   border: solid #fffdff;
 }
 
-/* input:focus-visible {
-  border: solid #ffff;
-}
-
-input:active {
-  border: solid #ffff;
-} */
-
 #personal-details-form {
   flex-direction: column;
   width: 60%;
@@ -72,6 +64,10 @@ input:active {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+#auth-msg {
+  color: #c03027;
 }
 
 .contact-details {
@@ -127,12 +123,12 @@ input:active {
 
 @media (max-width: 30rem) {
   #personal-details-form {
-    width: 70%; 
+    width: 95%; 
   }
 
   .personal-details {
     width: 16.6rem;
-    height: 6rem;
+    height: 6.7rem;
   }
 }
 

@@ -119,6 +119,8 @@
 
 footer {
   background-color: #c03027;
+  margin: 0;
+  padding: 0;
 }
 
 #footer-details {
@@ -164,6 +166,7 @@ footer {
 
 #media-list ul li a {
   padding: 0 6px;
+  color: #ffff;
 }
 
 footer p {
@@ -179,55 +182,27 @@ footer p a {
   text-decoration: none;
 }
 
-/* MEDIA QUERIES */
-/* @media (max-width: 64rem) {
-  #main-header {
-    padding: 0 2%;
-    width: 90%;
-  }
-
-  #college img {
-    width: 4.3rem;
-    height: 4rem;
-  }
-
-  #college h1 {
-    font-size: 1rem;
-  }
-
-  #main-header ul li a {
-    font-size: 0.7rem;
-  }
-
-  #media-list ul {
-    width: 8rem;
-    margin: 10px auto;
-    padding: 0;
-    margin: 0;
-  }
-} */
-
 @media (max-width: 64rem) {
   #main-header {
-    padding: 0 2%; /* Ensures the header doesn't look cramped */
-    width: 95%; /* Makes use of available width */
+    padding: 0 2%; 
+    width: 95%; 
   }
 
   #college img {
     width: 4rem;
-    height: 3.8rem; /* Adjusted size for better responsiveness */
+    height: 3.8rem; 
   }
 
   #college h1 {
-    font-size: 1.2rem; /* Slightly increased font size */
+    font-size: 1.2rem; 
   }
 
   #main-header ul li a {
-    font-size: 0.8rem; /* Adjusted font size for readability */
+    font-size: 0.8rem; 
   }
 
   #media-list ul {
-    width: 9rem; /* Adjusted width */
+    width: 9rem; 
     margin: 10px auto;
     padding: 0;
   }
@@ -285,15 +260,13 @@ footer p a {
   }
 
   .menu-btn {
-    /* width: 2rem; */
     height: 2rem;
     margin: 10px 0;
   }
 
   .menu-btn span {
-    width: 70%;
+    width: 60%;
     height: 2px;
-    /* padding: 1px; */
   }
 
   #side-drawer header {
@@ -301,12 +274,7 @@ footer p a {
   }
 
   #side-drawer ul {
-    /* list-style: none;
-    margin: 0; */
     padding: 1rem;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
   }
   
   #side-drawer li {
@@ -348,7 +316,11 @@ footer p a {
     display: flex;
     width: 10rem;
     margin: 0 auto;
-    padding: 0 0.2rem;
+    padding: 0;
+  }
+
+  #media h2 {
+    width: 100px;
   }
 
   #media-list {
@@ -357,7 +329,7 @@ footer p a {
   }
 
   #media-list ul {
-    width: 8rem;
+    width: 10rem;
     margin: 10px auto;
     padding: 0;
     margin: 0;
