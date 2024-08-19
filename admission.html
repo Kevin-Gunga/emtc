@@ -17,15 +17,16 @@
     <header id="main-header">
       <div id="college">
         <img src="/images/college.jpeg" alt="college logo" />
-        <h1><a href="#">exiera medical training college</a></h1>
+        <h1><a href="/index.html">exiera medical training college</a></h1>
       </div>
       <nav>
         <ul>
-          <li><a href="">admission</a></li>
-          <li><a href="">academics</a></li>
-          <li><a href="">programs</a></li>
-          <li><a href="">branches</a></li>
-          <li><a href="">contact us</a></li>
+          <li><a href="/admission.html">admission</a></li>
+          <li><a href="/academics.html">academics</a></li>
+          <li><a href="/index.html#programs">programs</a></li>
+          <li><a href="/index.html#impact">impact</a></li>
+          <li><a href="/index.html#branches">branches</a></li>
+          <li><a href="/#media">contact us</a></li>
         </ul>
       </nav>
       <a href="#side-drawer" class="menu-btn">
@@ -45,67 +46,75 @@
       </header>
       <nav>
         <ul>
-          <li><a href="">admission</a></li>
-          <li><a href="">academics</a></li>
-          <li><a href="">programs</a></li>
-          <li><a href="">branches</a></li>
-          <li><a href="">contact us</a></li>
+          <li><a href="/admission.html">admission</a></li>
+          <li><a href="/academics.html">academics</a></li>
+          <li><a href="/index.html#programs">programs</a></li>
+          <li><a href="/index.html#impact">impact</a></li>
+          <li><a href="/index.html#branches">branches</a></li>
+          <li><a href="#media">contact us</a></li>
         </ul>
       </nav>
     </aside>
     <main>
       <p>Fill in the form to get started with emtc:</p>
-      <form action="" method="post">
+      <form action="" method="POST">
         <div id="personal-details-form">
-          <h1>Personal Information</h1>
+          <h3>Personal Information</h3>
           <div id="personal">
             <div class="personal-details">
-              <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name" />
+              <label for="first_name">First Name</label>
+              <input type="text" name="first_name" id="first_name" required autocomplete="off"/>
             </div>
 
             <div class="personal-details">
-              <label for="middle-name">Middle Name(optional)</label>
-              <input type="text" name="middle-name" id="middle-name" />
+              <label for="middle_name">Middle Name(optional)</label>
+              <input type="text" name="middle_name" id="middle_name" autocomplete="off"/>
             </div>
 
             <div class="personal-details">
-              <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name" />
+              <label for="last_name">Last Name</label>
+              <input type="text" name="last_name" id="last_name" required autocomplete="off"/>
             </div>
 
             <div class="personal-details">
-              <label for="id/birth">ID/Birth Cert No.</label>
-              <input type="number" name="id/birth" id="id/birth" />
+              <label for="email">email</label>
+              <input type="email" name="email" id="email" required autocomplete="off"/>
+            </div>
+
+            <div class="personal-details">
+              <label for="id_birth">ID/Birth Cert No.</label>
+              <input type="number" name="id_birth" id="id_birth" required autocomplete="off"/>
             </div>
 
             <div class="personal-details">
               <label for="gender">Gender</label>
-              <input type="text" name="gender" id="gender" />
+              <input type="text" name="gender" id="gender" required autocomplete="off"/>
             </div>
 
             <div class="personal-details">
-              <label for="date-birth">Date of Birth</label>
-              <input type="date" name="date-birth" id="date-birth" />
+              <label for="birth_date">Date of Birth</label>
+              <input type="date" name="birth_date" id="birth_date" required autocomplete="off"/>
             </div>
 
             <div class="personal-details">
               <label for="county">County</label>
-              <input type="text" name="county" id="county" />
+              <input type="text" name="county" id="county" required autocomplete="off"/>
             </div>
 
             <div class="personal-details">
-              <label for="year-examination">Year of Examination</label>
+              <label for="year_examination">Year of Examination</label>
               <input
                 type="text"
-                name="year-examination"
-                id="year-examination"
+                name="year_examination"
+                id="year_examination"
+                required 
+                autocomplete="off"
               />
             </div>
 
             <div class="personal-details">
-              <label for="index-number">Index Number</label>
-              <input type="number" name="index-number" id="index-number" />
+              <label for="index_number">Index Number</label>
+              <input type="number" name="index_number" id="index_number" required autocomplete="off"/>
             </div>
 
             <div class="personal-details">
@@ -113,56 +122,56 @@
                 >Do you consider yourself Disabled person?</label
               >
               <div>
-                <input type="radio" id="yes" name="disabled-person" value="yes">
+                <input type="radio" id="yes" name="disabled_person" value="yes">
                 <label for="yes">Yes</label>
               </div>
               <div>
-                <input type="radio" id="no" name="disabled-person" value="no">
+                <input type="radio" id="no" name="disabled_person" value="no">
                 <label for="no">No</label>
               </div>
             </div>
 
             <div class="personal-details">
               <label for="attachments"
-                >add attachments( e.g certificates)</label
+                >add attachments( e.g K.C.S.E certificate)</label
               >
-              <input type="file" name="attachments" id="attachments" />
+              <input type="file" name="attachments" id="attachments" required autocomplete="off"/>
             </div>
 
-            <button id="btn-next">next</button>
+            <button id="btn-next" type="button">next</button>
           </div>
         </div>
 
         <div id="contact-details-form">
-          <h1>Contact</h1>
+          <h3>Contact</h3>
           <div id="contact">
             <div class="contact-details">
-              <label for="postal-address">Postal address</label>
-              <input type="number" name="postal-address" id="postal-address" />
+              <label for="postal_address">Postal address</label>
+              <input type="number" name="postal_address" id="postal_address" required autocomplete="off"/>
             </div>
 
             <div class="contact-details">
-              <label for="postal-code">Postal code</label>
-              <input type="number" name="postal-code" id="postal-code" />
+              <label for="postal_code">Postal code</label>
+              <input type="number" name="postal_code" id="postal_code" required autocomplete="off"/>
             </div>
 
             <div class="contact-details">
               <label for="town">Town</label>
-              <input type="text" name="town" id="town" />
+              <input type="text" name="town" id="town" required autocomplete="off"/>
             </div>
 
             <div class="contact-details">
-              <label for="phone-number"
+              <label for="phone_number_1"
                 >Applicant's Phone(e.g 0707168253)</label
               >
-              <input type="number" name="phone-number" id="phone-number" />
+              <input type="number" name="phone_number_1" id="phone-number_1" required autocomplete="off"/>
             </div>
 
             <div class="contact-details">
-              <label for="phone-number"
+              <label for="phone_number_2"
                 >Alternative Phone(e.g 0707168253)</label
               >
-              <input type="number" name="phone-number" id="phone-number" />
+              <input type="number" name="phone_number_2" id="phone_number_2" />
             </div>
             <div id="contact button">
               <button type="button" class="btn" id="btn-previous">previous</button>
@@ -190,23 +199,23 @@
           <div id="media-list">
             <ul>
               <li>
-                <a href=""
-                  ><i class="fa-brands fa-square-facebook fa-2x"></i
-                ></a>
+                <a href="mailto:medicalexcella@gmail.com" target="_blank"
+                  ><i class="fa-solid fa-envelope fa-2x"></i>
+                </a>
               </li>
               <li>
-                <a href=""
-                  ><i class="fa-brands fa-square-whatsapp fa-2x"></i
+                <a href="https://www.facebook.com/profile.php?id=61560866005568" target="_blank"
+                  ><i class="fa-brands fa-square-facebook fa-2x"></i
                 ></a>
               </li>
               <li>
                 <a href=""><i class="fa-brands fa-tiktok fa-2x"></i></a>
               </li>
-              <li>
+              <!-- <li>
                 <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
-              </li>
+              </li> -->
               <li>
-                <a href=""><i class="fa-solid fa-square-phone fa-2x"></i></a>
+                <a href="tel:+254790984771" target="_blank"><i class="fa-solid fa-square-phone fa-2x"></i></a>
               </li>
             </ul>
           </div>

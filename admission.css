@@ -7,17 +7,28 @@ main p {
   margin: 0;
 }
 
-h1 {
+h3 {
   text-align: center;
   margin: 0 0 20px 0;
 }
 
+input {
+  background-color:  #ffff;
+  border: solid #fffdff;
+}
+
+/* input:focus-visible {
+  border: solid #ffff;
+}
+
+input:active {
+  border: solid #ffff;
+} */
+
 #personal-details-form {
-  display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 60%;
   margin: 0 auto 50px auto;
-  /* display: none; */
 }
 
 #personal {
@@ -38,7 +49,7 @@ h1 {
 
 #btn-next {
   width: 5rem;
-  height: 3.2rem;
+  height: 2.5rem;
   text-transform: uppercase;
   padding: 6px;
   background-color: #fffdff;
@@ -50,9 +61,8 @@ h1 {
 }
 
 #contact-details-form {
-  display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
   margin: 0 auto 50px auto;
   display: none;
 }
@@ -74,7 +84,6 @@ h1 {
 }
 
 #contact button {
-    /* padding: 10px; */
     margin: 0 10px;
 }
 
@@ -90,3 +99,40 @@ h1 {
 .btn:hover {
   cursor: pointer;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 48rem) {
+  #personal-details-form {
+    width: 80%;
+  }
+
+  .personal-details {
+    width: 12.6rem;
+  }
+
+  #contact-details-form {
+    width: 90%;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 12.6rem;
+    height: 5rem;
+    margin: 0 auto;
+  } 
+}
+
+@media (max-width: 30rem) {
+  #personal-details-form {
+    width: 70%; 
+  }
+
+  .personal-details {
+    width: 16.6rem;
+    height: 6rem;
+  }
+}
+

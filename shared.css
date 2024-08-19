@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   padding: 0 5%;
-  /* height: 96px; */
   position: fixed;
   width: 95%;
   top: 0;
@@ -34,7 +33,6 @@
 }
 
 #main-header nav {
-  /* padding: 6px ; */
   margin: auto;
   padding: 0;
 }
@@ -47,7 +45,6 @@
 }
 
 #main-header nav ul li {
-  /* margin: auto; */
   padding: 6px 10px;
   border-left: 1px solid #e3f8fb;
 }
@@ -57,6 +54,7 @@
   text-transform: uppercase;
   color: #e3f8fb;
   font-weight: 400;
+  font-size: 1rem;
 }
 
 #main-header nav ul li a:hover {
@@ -122,7 +120,6 @@
 
 footer {
   background-color: #c03027;
-  /* height: 200px; */
 }
 
 #footer-details {
@@ -152,14 +149,12 @@ footer {
 #media {
   display: flex;
   flex-direction: column;
-  /* width: 130px; */
-  /* margin: 0 0 50px 0; */
-  margin: 0;
+  margin: auto;
   padding: 0 1rem;
 }
 
 #media-list ul {
-  width: 16.25rem;
+  width: 11rem;
   margin: 10px auto;
   display: flex;
 }
@@ -169,7 +164,7 @@ footer {
 }
 
 #media-list ul li a {
-  padding: 0 10px;
+  padding: 0 6px;
 }
 
 footer p {
@@ -186,6 +181,32 @@ footer p a {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 64rem) {
+  #main-header {
+    /* padding: 0 2%; */
+    /* width: 90%; */
+  }
+
+  #college img {
+    width: 4.3rem;
+    height: 4rem;
+  }
+
+  #college h1 {
+    font-size: 1rem;
+  }
+
+  #main-header ul li a {
+    font-size: 0.7rem;
+  }
+
+  #media-list ul {
+    width: 8rem;
+    margin: 10px auto;
+    padding: 0;
+    margin: 0;
+  }
+}
 
 @media (max-width: 48rem) {
   #main-header {
@@ -200,13 +221,10 @@ footer p a {
   #college img {
     width: 3.7rem;
     height: 3.5rem;
-    /* margin: auto; */
-    /* border-radius: 5px; */
   }
 
   #college h1 {
     font-size: 1.5rem;
-    /* margin: 0; */
   }
 
   .menu-btn {
@@ -217,6 +235,20 @@ footer p a {
     font-size: 0.85rem;
   }
 
+  #media-list ul {
+    width: 11rem;
+    margin: 10px auto;
+    display: flex;
+  }
+
+  #media-list ul li {
+    list-style: none;
+  }
+
+  #media-list ul li a {
+    padding: 0 8px;
+  }
+
   footer p {
     font-size: 0.85rem;
   }
@@ -225,39 +257,68 @@ footer p a {
 @media (max-width: 30rem) {
   #main-header {
     padding: 1% 3%;
-    /* width: 94%; */
   }
 
   .menu-btn {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto;
   }
 
   #college img {
-    width: 3.5rem;
-    height: 3.2rem;
-    /* margin: auto; */
-    /* border-radius: 5px; */
+    width: 3.2rem;
+    height: 3rem;
   }
 
   #college h1 {
-    font-size: 1rem;
+    font-size: 0.75rem;
+    margin: auto;
   }
 
   #footer-details {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* margin: 0 auto 50px auto; */
-    width: 9.5rem;
+    width: 0.5rem;
+  }
+
+  #news {
+    padding: 0 0.2rem;
   }
 
   #news ul {
-    width: 10.25rem;
+    width: 8rem;
+    margin: auto;
+  }
+
+  #news ul li {
+    font-size: 0.7rem;
+  }
+
+  #media {
+    display: flex;
+    /* justify-content: center; */
+    width: 10rem;
+    margin: 0 auto;
+    padding: 0 0.2rem;
+    /* padding: 0 1rem; */
+  }
+
+  #media-list {
+    /* width: 8rem; */
+    margin: 0 0;
+    padding: 0 0;
   }
 
   #media-list ul {
-    width: 10.25rem;
+    width: 8rem;
     margin: 10px auto;
     padding: 0;
+    margin: 0;
+  }
+
+  #media-list ul li a {
+    padding: 0 5px;
+  }
+
+  footer p {
+    font-size: 0.7rem;
   }
 }
