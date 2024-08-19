@@ -141,7 +141,7 @@ table td {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 64rem) {
+/* @media (max-width: 64rem) {
   #health-catch-image img {
     padding: 30px 10px;
     width: 20rem;
@@ -164,6 +164,47 @@ table td {
   #branches ul li {
     font-size: 0.8rem;
     padding: 0 1rem;
+  }
+} */
+
+@media (max-width: 64rem) {
+  #health-catch-image img {
+    padding: 20px 15px;
+    width: 25rem; /* Increased width for better visibility on tablets */
+  }
+
+  h2 {
+    font-size: 1.1rem; /* Slightly larger font size */
+  }
+
+  #model {
+    padding: 0 10px 0 0;
+    font-size: 0.9rem; /* Increased font size */
+    width: 25rem; /* Increased width */
+  }
+
+  #about p {
+    font-size: 0.75rem; /* Adjusted font size */
+    width: 80%; /* Increased width for better readability */
+  }
+
+  #programs table {
+    width: 75%; /* Adjusted table width for smaller screens */
+  }
+
+  #programs table th,
+  table td {
+    padding: 7px; /* Increased padding for better spacing */
+  }
+
+  #branches ul {
+    flex-direction: row; /* Maintains row layout */
+    justify-content: space-between;
+  }
+
+  #branches ul li {
+    font-size: 0.85rem; /* Slightly larger font size */
+    padding: 0 1.5rem; /* Adjusted padding */
   }
 }
 
@@ -189,6 +230,7 @@ table td {
 
   #about p {
     width: 80%;
+    font-size: 0.85rem;
   }
 
   #programs table {
