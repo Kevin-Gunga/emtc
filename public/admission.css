@@ -13,10 +13,12 @@ h3 {
 }
 
 input {
+  height: 1.4rem;
   background-color:  #ffff;
   border: solid #fffdff;
   border-radius: 6px;
-  transition: border-color 0.3s ease; /* Smooth transition */
+  transition: border-color 0.3s ease; 
+  margin: 0.2rem 0 0 0;
 }
 
 input:focus {
@@ -42,7 +44,7 @@ input:focus {
   flex-direction: column;
   padding: 0;
   width: 15.6rem;
-  height: 3.2rem;
+  height: 4.5rem;
   margin: 0 auto;
 }
 
