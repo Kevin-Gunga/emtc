@@ -85,10 +85,6 @@ db.connect((err) => {
 });
 
 app.get("/index", (req, res) => {
-  res.redirect("/");
-});
-
-app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../index.html"));
 });
 
