@@ -84,6 +84,14 @@ db.connect((err) => {
   });
 });
 
+app.get("", (req, res) => {
+  res.redirect("/index");
+});
+
+app.get("/", (req, res) => {
+  res.redirect("/index");
+});
+
 app.get("/index", (req, res) => {
   res.sendFile(path.join(__dirname, "../index.html"));
 });
