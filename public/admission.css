@@ -15,6 +15,13 @@ h3 {
 input {
   background-color:  #ffff;
   border: solid #fffdff;
+  border-radius: 6px;
+  transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+input:focus {
+  border-color:  #c03027; /* New border color when clicked */
+  outline: none; /* Remove the default outline */
 }
 
 #personal-details-form {
