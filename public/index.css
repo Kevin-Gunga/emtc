@@ -60,7 +60,7 @@ h2 {
   width: 60%;
   border-collapse: collapse;
   margin: 6px auto 2rem auto;
-  box-shadow: 4px 4px 4px 1px #fffdff;
+  box-shadow: 4px 4px 4px 2px #fffdff;
 }
 
 #programs table th,
