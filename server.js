@@ -7,7 +7,7 @@ const multer = require("multer");
 require("dotenv").config();
 
 
-app.use(express.static(path.join(__dirname, "../")));
+app.use(express.static(path.join(__dirname, "/")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -89,7 +89,7 @@ app.get("/index", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../index.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.post("/admission", upload.single('attachments'), (req, res) => {
@@ -122,19 +122,19 @@ app.post("/admission", upload.single('attachments'), (req, res) => {
 });
 
 app.get("/admission", (req, res) => {
-  res.sendFile(path.join(__dirname, "../admission.html"));
+  res.sendFile(path.join(__dirname, "admission.html"));
 });
 
 app.get("/academics", (req, res) => {
-  res.sendFile(path.join(__dirname, "../academics.html"));
+  res.sendFile(path.join(__dirname, "academics.html"));
 });
 
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "../404.html"));
+  res.status(404).sendFile(path.join(__dirname, "404.html"));
 });
 
 app.use((error, req, res, next) => {
-  res.status(500).sendFile(path.join(__dirname, "../500.html"));
+  res.status(500).sendFile(path.join(__dirname, "500.html"));
 });
 
 app.listen(4000, () => {
