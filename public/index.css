@@ -1,5 +1,8 @@
 body {
-  background-color: #0093dd;
+  /* background-color: #0093dd; */
+  background-image: url('../images/a96fdab1d093bb68d5cb211ef5cd0ad9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
@@ -60,7 +63,8 @@ h2 {
   width: 60%;
   border-collapse: collapse;
   margin: 6px auto 2rem auto;
-  box-shadow: 2px 2px 2px 3px #fffdff;
+  box-shadow: 1px 1px 1px 5px #fffdff;
+  /* box-shadow: 1px 1px 1px 5px rgb(209, 213, 235); */
 }
 
 #programs table th,
